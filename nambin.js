@@ -1,18 +1,12 @@
-//첫번째 이미지 이미지 슬라이드 되는 부분
-
-//DOMContentLoaded 이게 페이지가 로드되면 addEventListener가 발생하는 뜻
-// document.addEventListener('DOMContentLoaded', () =>{
-//     //모든 슬라이드(이미지) -> s
-//     const s = document.querySelectorAll('.slide');
-//     //현재 슬라이드는 기본적으로 0
-//     let now_slide =0;
-// })
-
-
 //ABOUT_SKU부분 슬라이더
 document.addEventListener("DOMContentLoaded", ()=> {
-    const ABOUT_SKU_img = document.querySelectorAll(".ABOUT_SKU_slide");
-    let now_img = 0;
+    const ABOUT_SKU_img = document.querySelectorAll(".ABOUT_SKU_slide"); //이미지 슬라이드 부분
+    let now_img = 0; //현재 이미지를 나타내주는 것
+
+    const prevBtn = document.querySelector('.prev.slick-arrow'); //이전 버튼
+    const stopBtn = document.querySelector('.stop.on'); //정지 버튼
+    const nextBtn = document.querySelector('.next.slick-arrow'); //다음 버튼
+    let stopimg; //이미지 정지를 위함
 
     function show(v){
         ABOUT_SKU_img.forEach((slide,i) =>{
@@ -26,11 +20,32 @@ document.addEventListener("DOMContentLoaded", ()=> {
         })
     }
 
+    if (prevBtn) {
+              prevBtn.addEventListener('click', () => {
+                now_img = (now_img - 1 + ABOUT_SKU_img.length) % ABOUT_SKU_img.length;
+                show(now_img);
+              })
+            }
+          
+            if (stopBtn) {
+              stopBtn.addEventListener('click', () => {
+                clearInterval(stopimg);
+                console.log('클릭됨')
+              });
+            }
+          
+            if (nextBtn) {
+              nextBtn.addEventListener('click', () => {
+              now_img = (now_img + 1 + ABOUT_SKU_img.length) % ABOUT_SKU_img.length;
+              show(now_img)
+              });
+            }
+
     function next(){
         now_img = (now_img + 1) % ABOUT_SKU_img.length;
         show(now_img);
     }
 
     show(now_img)
-    setInterval(next,3000);
+    stopimg = setInterval(next,3000);
 })
