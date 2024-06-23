@@ -246,12 +246,30 @@ font-size: 14px;
 }
 
 .mid1, .mid2 ,.mid3 , .mid4 {
-    border: 1px solid #000; /* 각 아이템의 테두리 */
+    
     padding: 40px; /* 내부 여백 */
     background-color: #f0f0f0; /* 배경색 */
     flex: 1; /* 아이템들이 같은 비율로 공간을 차지하도록 설정 */
-    width: 180px;
-    height: 200px;
+    width: 200px;
+    height: 240px;
+}
+
+.mid1_box{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    /* width: 300px; */
+    margin-top:170px;
+}
+
+.mid1_box_strong{
+    font-family: 'Noto Regular';
+    font-size: 18px;
+    color: #2c2c2c;
+    text-align: center;
 }
 
 .mid1{
@@ -273,4 +291,88 @@ font-size: 14px;
 /* -------------------------------------------------------------------------- */
 
 /* 푸터부분 */
-/* background: #272b31 */
+.footer{
+    background: #272b31;
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_top{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #51565f;
+    width: 100%;
+}
+
+.footer_top_left{
+    padding: 20px;
+    margin-left: 50px;
+}
+
+.footer_top_right {
+    padding-right: 20px;
+    display: flex;
+    /* justify-content: flex-end; */
+    margin-left: 235px;
+}
+
+
+a{
+    text-decoration: none;
+    font-family: 'Noto Light';
+    font-size: 16px;
+    margin-right: 26px;
+}
+
+a:not(:first-of-type) {
+    color: white;
+}
+
+.footer_btn{
+    font-size: 17px;
+    text-align: center;
+    height: 64px;
+    width: 280px;
+    background-color: #3d4146;
+    color: white;
+}
+
+.footer_btn2{
+    background: #295ca4 url(https://www.sungkyul.ac.kr/sites/skukr/images/common/arrow-jump.png) no-repeat center center;
+    width: 66px;
+    height: 64px;
+}
+
+.footer_bottom{
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_bottom_left{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_span{
+    margin-bottom: 8px;
+    color: rgba(255, 255, 255, .8);
+    margin-left: 15px;
+}
+
+.footer_p{
+    font-family: 'TitilliumWeb-ExtraLight';
+    color: rgba(255, 255, 255, .3);
+    margin-left: 15px;
+}
+
+.footer_img{
+    vertical-align: top;
+    width: auto;
+    max-width: 100%;
+    margin-left: 260px;
+}
+
