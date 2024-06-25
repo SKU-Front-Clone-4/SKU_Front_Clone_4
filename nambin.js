@@ -49,3 +49,25 @@ document.addEventListener("DOMContentLoaded", ()=> {
     show(now_img)
     stopimg = setInterval(next,3000);
 })
+
+
+// 사이드 버튼 부분
+document.addEventListener('DOMContentLoaded' , function() {
+  const side_btn = document.querySelector('.side_btn'); // OPEN 버튼
+  const close_btn = document.querySelector('.close_btn'); // CLOSE 버튼
+  const click_side = document.querySelector('.click_side'); //오픈 후 div
+
+  side_btn.addEventListener('click' , function(){
+    console.log('오픈버튼 클릭됨');
+    click_side.style.display='flex';
+    close_btn.style.display='block';
+    side_btn.style.display="none";
+  });
+
+  close_btn.addEventListener('click' , function(){
+    console.log('닫는버튼 클릭됨');
+    click_side.style.display='none';
+    close_btn.style.display='none';
+    side_btn.style.display='block';
+  })
+})

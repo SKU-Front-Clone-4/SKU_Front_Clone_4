@@ -376,3 +376,130 @@ a:not(:first-of-type) {
     margin-left: 260px;
 }
 
+
+.side_btn_div{
+    position: fixed; 
+    right: 0; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    z-index: 1000; /* 다른 요소들보다 앞에 위치하도록 */
+}
+
+.side_btn{
+    background: rgba(38, 79, 134, .8) url(https://www.sungkyul.ac.kr/sites/skukr/images/main/arrow-side-pop-open.png) no-repeat center 64%;
+    color : white;
+    width: 70px;
+    padding: 29px 0 55px 0;
+}
+
+.close_btn{
+    position: absolute;
+    display: none;
+    background: rgba(38, 79, 134, .8) url(https://www.sungkyul.ac.kr/sites/skukr/images/main/arrow-side-pop-close.png) no-repeat center 64%;
+    color : white;
+    width: 70px;
+    padding: 29px 0 55px 0;
+    transform: translateY(-50%); 
+    left : -240px;
+    top : 50%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.click_side {
+    display: none;
+    position: fixed; 
+    top: 50%; 
+    right: 0; 
+    transform: translateY(-50%);
+    /* display: flex; */
+    flex-direction: column;
+    width: 173px;
+    height: 100vh; 
+    z-index: 1000;
+    padding: 15% 0;
+    overflow-y: auto;
+    background-color: #295ca4;
+}
+
+
+.btn_span{
+    width: 100%;
+    font-family: 'Noto DemiLight';
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    margin-top: 15px;
+}
+.click_side_inside{
+    margin-top: 60px;
+    width: 100%;
+    /* padding: 25px; */
+    font-family: 'Noto DemiLight';
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    background: url(https://www.sungkyul.ac.kr/sites/skukr/images/main/ico-float-banner1.png) no-repeat top;
+    padding-top: 40px;
+}
+
+.notify{
+    position: absolute;
+    right: 60px;
+    top: 80px;
+    width: 21px;
+    height: 21px;
+    background: #c71514;
+    border-radius: 100%;
+}
+
+.click_side_inside2{
+    width: 100%;
+    /* padding: 25px; */
+    font-family: 'Noto DemiLight';
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    background: url(https://www.sungkyul.ac.kr/sites/skukr/images/main/ico-float-banner2.png) no-repeat top;
+    padding-top: 40px;
+    margin-top: 30px;
+}
+
+.click_side_inside3{
+    width: 100%;
+    /* padding: 25px; */
+    font-family: 'Noto DemiLight';
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    background: url(https://www.sungkyul.ac.kr/sites/skukr/images/main/ico-float-banner3.png) no-repeat top;
+    padding-top: 40px;
+    margin-top: 30px;
+}
+
+.click_side_text{
+display: flex;
+flex-direction: column;
+width: 100%;
+margin-bottom: 2px;
+padding: 3px 0;
+border-radius: 3px;
+font-family: 'TitilliumWeb-Regular';
+font-size: 15px;
+color: #fff;
+text-align: center;
+margin-top : 90px;
+}
+
+.click_side_footer{
+    background: url(https://www.sungkyul.ac.kr/sites/skukr/images/main/ico-goto-top.png) no-repeat center;
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 100%;
+    text-indent: -9999px;
+    width: 51px;
+    height: 51px;
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+    margin-left: 60px;
+}

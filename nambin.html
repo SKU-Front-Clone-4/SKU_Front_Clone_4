@@ -11,7 +11,7 @@
     <div class="Full_Screen">
 
         <!-- 젤 위에 있는 화면 -->
-        <div class="First_Screen">
+        <div class="First_Screen" id="First_Screen">
             <!-- 첫번째 화면이라는 의미로 이름 옆에 1을 붙임 -->
             <div class="흥수1">흥수 파트</div>
             <div class="지영1">지영 파트</div>
@@ -26,7 +26,7 @@
         </div>
 
         <!-- 2번째 화면 -->
-        <div class="Second_Screen">
+        <div class="Second_Screen" id="Second_Screen">
             <div class="item1"> <!--왼쪽에 오도록 하는 것 -->
                 <div class="학사">학사</div>
                 <div class="학사일정">학사일정</div>
@@ -71,7 +71,7 @@
         </div>
 
         <!-- 3번째 화면 -->
-        <div class="Third_Screen">
+        <div class="Third_Screen" id="Third_Screen">
             <div class="Third_Left">왼쪽 화면</div>
             <!-- 글로벌 경영 어쩌구 할 때 이미지 https://www.sungkyul.ac.kr/sites/skukr/images/main/bg-depart.png -->
              <!-- 이게 캠퍼스 가이드 부분 https://www.sungkyul.ac.kr/sites/skukr/images/main/bg-campus-m.png -->
@@ -84,7 +84,7 @@
         </div>
 
         <!-- 4번째 화면 -->
-        <div class="Fourth_Screen">
+        <div class="Fourth_Screen" id="Fourth_Screen">
             <div class="Fourth_top">맨위 화면</div>
 
             <!-- 중간 화면 -->
@@ -135,7 +135,7 @@
         </div>
 
         <!-- 바닥부분 -->
-        <div class="footer">
+        <div class="footer" id="footer">
             <div class="footer_top">
                 <div class="footer_top_left">
                     <a href="https://www.sungkyul.ac.kr/skukr/482/subview.do">개인정보처리방침 :</a>
@@ -161,6 +161,39 @@
                 </div>
             </div>
         </div>
+
+    <!-- 사이드 버튼     -->
+    <div class="side_btn_div">
+        <button type="button" class="side_btn">OPEN</button>
+
+        <!-- 버튼클릭하면 보이는 부분 -->
+        <button type="button" class="close_btn">CLOSE</button>
+        <div class="click_side">
+            <div class="click_side_inside">
+                POPUP <span class="notify">7</span>
+            </div>
+
+            <div class="click_side_inside2">
+                QUICK
+            </div>
+
+            <div class="click_side_inside3">
+                비대면서비스
+            </div>
+
+
+            <div class="click_side_text">
+                <a href="#First_Screen"><p style="color:white">INTRO</p></a>
+                <a href="#Second_Screen"><p>SKU INFO</p></a>
+                <a href="#Third_Screen"><p>SKU INTD</p></a>
+                <a href="#Fourth_Screen"><p>SNS</p></a>
+            </div>
+
+            <a href="#First_Screen"><div class="click_side_footer">
+            </div> </a>
+        </div>
+    </div>
+
     </div>
     
 </body>
